@@ -10,7 +10,7 @@
   let $result = document.querySelector('#diff-result > div');
 
   $form.addEventListener('submit', onSubmit);
-  
+
   /**
    * On diff form submit
    */
