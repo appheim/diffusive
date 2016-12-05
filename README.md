@@ -8,4 +8,4 @@ npm start
 ```
 
 ### License
-MIT
+[MIT](https://tldrlegal.com/license/mit-license)
