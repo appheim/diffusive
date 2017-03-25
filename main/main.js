@@ -25,10 +25,29 @@
     e.preventDefault();
 
     let changes = diff.diffChars($left.value, $right.value);
+    let result = '';
+    $resultContainer.innerHTML = '';
 
-    $resultContainer.innerHTML = JSON.stringify(changes);
+    changes.forEach(change => {
+      const text = escapeHTML(change.value);
+      let className = null;
+
+      if (change.removed) {
+        className = 'removed';
+      } else if (change.added) {
+        className = 'added';
+      }
+
+      result += wrapText(text, className);
+    });
+
+    $resultContainer.innerHTML += result;
 
     toggleView();
+  }
+
+  function wrapText(value, className = null) {
+    return `<span class="${ className || '' }">${ value }</span>`;
   }
 
   function toggleView() {
@@ -45,5 +64,15 @@
 
   function onBack() {
     toggleView();
+  }
+
+  function escapeHTML(string) {
+    return string
+      .replace(new RegExp('&', 'g'), '&amp;')
+      .replace(new RegExp('<', 'g'), '&lt;')
+      .replace(new RegExp('>', 'g'), '&gt;')
+      .replace(new RegExp('"', 'g'), '&quot;')
+      .replace(new RegExp(' ', 'g'), '&nbsp;')
+      .replace(new RegExp('\n', 'g'), '<br>');
   }
 })();
