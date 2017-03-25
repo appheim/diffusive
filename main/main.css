@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+html,
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#diff-result,
+#diff-insert {
+    flex: 1;
+    flex-direction: column;
+}
+
+#diff-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#diff-form > .diff-form__input {
+    flex: 1;
+    display: flex;
+}
+#diff-result section,
+#diff-form textarea {
+    flex: 1;
+}
+
+.diff-form__actions {
+    text-align: right;
+}
+
+#diff-insert,
+#diff-result {
+    display: none;
+}
+#diff-insert.active,
+#diff-result.active {
+    display: flex;
+}
