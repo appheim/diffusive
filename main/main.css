@@ -20,6 +20,7 @@ body > header {
     user-select: none;
     color: #8c8585;
     -webkit-app-region: drag;
+    -webkit-user-select: none;
 }
 
 #diff-result,
@@ -69,7 +70,7 @@ body > header {
 #diff-form textarea {
     outline: none;
     resize: none;
-    border: 1px solid #000;
+    border: 1px solid #616161;
     padding: 5px;
     background-color: transparent;
     z-index: 1;
@@ -106,7 +107,7 @@ button:hover {
 #diff-result section {
     margin: 10px;
     overflow: auto;
-    border: 1px solid #000;
+    border: 1px solid #616161;
     padding: 5px;
 }
 #diff-result footer {

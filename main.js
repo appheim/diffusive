@@ -11,7 +11,9 @@ function createWindow () {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    titleBarStyle: 'hidden'
+    titleBarStyle: 'hidden',
+    minHeight: 150,
+    minWidth: 380
   });
 
   win.loadURL(url.format({
