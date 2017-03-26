@@ -10,7 +10,8 @@ let win;
 function createWindow () {
   win = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    titleBarStyle: 'hidden'
   });
 
   win.loadURL(url.format({
