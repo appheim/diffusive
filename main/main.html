@@ -9,8 +9,14 @@
 <section id="diff-insert" class="active">
     <form id="diff-form">
         <div class="diff-form__input">
-            <textarea id="left" cols="30" rows="10"></textarea>
-            <textarea id="right" cols="30" rows="10"></textarea>
+            <div>
+                <div id="left-placeholder">Before</div>
+                <textarea id="left" placeholder="Before..."></textarea>
+            </div>
+            <div>
+                <div id="right-placeholder">After</div>
+                <textarea id="right" placeholder="After..."></textarea>
+            </div>
         </div>
         <div class="diff-form__actions">
             <button type="submit" class="diff-form__actions__submit">Submit</button>
