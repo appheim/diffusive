@@ -1,0 +1,47 @@
+html {
+    background-color: #262e39;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    color: #fff;
+    height: 50px;
+}
+
+nav h1 {
+    float: left;
+    margin: 0;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+nav button {
+    float: right;
+    color: rgba(255, 255, 255, 0.66);
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+nav button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+section img {
+    margin-top: 50px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (min-width: 800px) {
+    nav {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
