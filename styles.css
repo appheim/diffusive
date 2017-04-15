@@ -13,6 +13,7 @@ nav h1 {
     margin: 0;
     line-height: 50px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 nav button {
     float: right;
@@ -30,6 +31,14 @@ nav button:hover {
     color: #fff;
 }
 
+section {
+    color: #ffffff;
+}
+section h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
 section img {
     margin-top: 50px;
     max-width: 480px;
@@ -39,6 +48,7 @@ section img {
 }
 
 @media (min-width: 800px) {
+    section,
     nav {
         width: 800px;
         margin-right: auto;
