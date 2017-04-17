@@ -58,9 +58,10 @@ section .btn-try {
     padding: 15px 20px;
     text-decoration: none;
     font-size: 20px;
+    border-radius: 4px;
 }
 
-section .btn-try {
+section .btn-try:hover {
     background-color: #4cc787;
 }
 
