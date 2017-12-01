@@ -2,6 +2,8 @@
 
 > Diff checker
 
+![](https://appheim.github.io/diffusive/main.png)
+
 [https://appheim.github.io/diffusive/](https://appheim.github.io/diffusive/)
 
 ### Develop
